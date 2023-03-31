@@ -1,0 +1,51 @@
+có 3 kiểu CSS
+- internal (bên trong): sử dụng cặp thẻ style trong phần head của file html
+- external (bên ngoài): sử dụng file ".css" .Trong file html link đường dẫn của file css 
+- inline (): sử dụng thuộc tính style bên trong thẻ mở của phần tử
+- 100% = 16px
+- rem: luôn phụ thuộc vào thẻ html (thuộc tính này để change text font)
+- % : sẽ luôn phụ thuộc vào cái thẻ chứa nó
+- vw (viewport width) = kích thước chiều ngang của trình duyệt
+-vh (viewport height) = kích thước chiều dọc của trình duyệt
+- background-image: khi có 2 ảnh thì cái nào viết trước thì ở trên, giữa 2 ảnh cách nhau bằng dấu ","
+	              : dùng url() để add ảnh
+- Position: vị trí tương đối, sẽ lấy chính mình làm gốc tọa độ và không phụ thuộc vào phần tử nào
+- Muốn chỉnh phần tử ra giữa div ta cho thuộc tính div là flex, rồi cho thuộc tính của phần tử trong div là margin: auto
+- Thuộc tính fixed để cố định một phần tử ở vị trí nào đó (thường dùng cho phần head để cố định trên đầu trang khi trang web có kéo xuống or lên)
+
+-404 là lỗi đường dẫn trong controller
+-500 là lỗi load dữ liệu (có thể viết sai tên biến hoặc thuộc tính trong giao diện)
+
+SPRING
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.thuyhv.demo-spring-mvc</groupId>
+	<artifactId>DemoSpringMVC</artifactId>
+	<version>1.0</version>
+	<packaging>war</packaging>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>6.0.4</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>4.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.3.1</version>
+			</plugin>
+		</plugins>
+		<finalName>DemoSpringMVC</finalName>
+	</build>
+</project>
